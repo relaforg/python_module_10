@@ -62,4 +62,3 @@ if (__name__ == "__main__"):
     print("\nTesting memoized fibonacci...")
     print("fib(10):", memoized_fibonacci(10))
     print("fib(15):", memoized_fibonacci(15))
-    print("fib(15):", memoized_fibonacci(30))
