@@ -14,7 +14,7 @@ def mage_stats(mages: list[dict]) -> dict:
     if (not len(mages)):
         avg = 0
     else:
-        avg = sum(map(lambda m: m["power"], mages)) / len(mages)
+        avg = round(sum(map(lambda m: m["power"], mages)) / len(mages), 2)
 
     return ({
         "max_power": max(mages, key=lambda m: m["power"])["power"],
